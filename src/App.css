@@ -18,6 +18,7 @@
 
 .app-logo {
     width: 30px;
+    cursor: pointer;
 }
 
 .app-title {
@@ -98,4 +99,9 @@
     border: 1px solid #e2e8f0;
     border-radius: 4px;
     background-color: #fff;
+    cursor: pointer;
+}
+
+.product-add-button:hover{
+    background-color: #ecedef;
 }

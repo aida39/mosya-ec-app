@@ -6,7 +6,7 @@ import Footer from './footer';
 const CartPage = () => {
     return (
         <>
-            <Header />
+            <Header cart={cart} />
             <div>CartPage</div>
             <Footer />
         </>
