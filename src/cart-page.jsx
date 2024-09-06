@@ -8,7 +8,6 @@ const CartPage = () => {
         <>
             <Header />
             <div>CartPage</div>
-            <Link to="/">トップページへ</Link>
             <Footer />
         </>
     )
