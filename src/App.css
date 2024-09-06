@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 80px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.app-logo {
+    width: 30px;
+}
+
+.app-title {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.header-right {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ecedef;
+    border-radius: 5px;
+    position: relative;
+}
+
+.header-cart {
+    width: 25px;
+    height: 25px;
+}
+
+.cart-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: red;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: -9px;
+    right: -9px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    margin: 20px 80px;
+}

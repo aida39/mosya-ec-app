@@ -1,6 +1,7 @@
 import './App.css'
-import TopPage from './top-page.jsx'
-import CartPage from './cart-page.jsx'
+import './reset.css'
+import TopPage from './top-page'
+import CartPage from './cart-page'
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 
