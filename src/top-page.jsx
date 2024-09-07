@@ -15,7 +15,7 @@ const TopPage = ({ addToCart, cart }) => {
                         <p className="product-price">¥{product.price}</p>
                         <button
                             className="product-add-button"
-                            onClick={() => addToCart(product.id)}
+                            onClick={() => addToCart(product.id,product.name,product.price,product.image)}
                         >
                             カートに追加
                         </button>

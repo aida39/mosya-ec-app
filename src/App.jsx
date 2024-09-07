@@ -6,24 +6,39 @@ import CartPage from './cart-page'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
-  const [cart, setCart] = useState({ items: {}, totalCount: 0 });
+  const [cart, setCart] = useState({ items: [], totalCount: 0 });
 
-  const addToCart = (productId) => {
+  //addToCart,setCartについてはメモの「入門3-3 useState」を参照
+  const addToCart = (productId, productName, productPrice, imagePath) => {
     setCart(prevCart => {
-      const updatedItems = { ...prevCart.items };
-      if (updatedItems[productId]) {
-        updatedItems[productId].count += 1;
+      const existingItemIndex = prevCart.items.findIndex(item => item.id === productId);
+      let updatedItems;
+
+      if (existingItemIndex !== -1) {
+        updatedItems = [...prevCart.items];
+        updatedItems[existingItemIndex] = {
+          ...updatedItems[existingItemIndex],
+          count: updatedItems[existingItemIndex].count + 1
+        };
       } else {
-        updatedItems[productId] = { id: productId, count: 1 };
+        updatedItems = [
+          ...prevCart.items,
+          {
+            id: productId,
+            name: productName,
+            price: productPrice,
+            image: imagePath,
+            count: 1
+          }
+        ];
       }
+
       const newCart = {
         items: updatedItems,
         totalCount: prevCart.totalCount + 1
       };
 
-      // カートの中身をコンソールに表示
       console.log('Updated Cart:', newCart);
-
       return newCart;
     });
   };

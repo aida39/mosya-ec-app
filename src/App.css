@@ -105,3 +105,23 @@
 .product-add-button:hover{
     background-color: #ecedef;
 }
+
+.cart-wrapper {
+    flex-grow: 1;
+    padding: 0 80px;
+    background-color: #ecedef;
+}
+
+.cart-inner{
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+.cart-title{
+    padding-top: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+.cart-product-img{
+    width: 5%;
+}
