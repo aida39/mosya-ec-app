@@ -10,12 +10,12 @@ const Header = ({ cart }) => {
                 </Link>
                 <h1 className="app-title">mosya Inc</h1>
             </div>
-            <div className="header-right">
-                <Link to="/cart">
+            <Link to="/cart">
+                <div className="header-right">
                     <img src="./images/cart.svg" alt="" className="header-cart" />
-                </Link>
-                <div className="cart-count">{cart?.totalCount || 0}</div>
-            </div>
+                    <div className="cart-count">{cart?.totalCount || 0}</div>
+                </div>
+            </Link>
         </div>
     )
 }

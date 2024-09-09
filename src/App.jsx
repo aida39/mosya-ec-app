@@ -50,7 +50,7 @@ function App() {
     },
     {
       path: "cart",
-      element: <CartPage cart={cart} />,
+      element: <CartPage cart={cart} setCart={setCart} />,
     },
   ]);
 
