@@ -165,7 +165,7 @@
     width: 20%;
     margin: 0 30px;
     padding: 10px;
-    border:1px solid #6b7280;
+    border: 1px solid #6b7280;
     border-radius: 5px;
 
 }
@@ -196,4 +196,9 @@
 .cart-message {
     padding: 40px 0;
     text-align: center;
+}
+
+.cart-result-count {
+    margin: 0 30px;
+    color: #6b7280;
 }

@@ -13,7 +13,9 @@ const Header = ({ cart }) => {
             <Link to="/cart">
                 <div className="header-right">
                     <img src="./images/cart.svg" alt="" className="header-cart" />
-                    <div className="cart-count">{cart?.totalCount || 0}</div>
+                    {cart?.totalCount > 0 && (
+                        <div className="cart-count">{cart.totalCount}</div>
+                    )}
                 </div>
             </Link>
         </div>

@@ -38,7 +38,6 @@ function App() {
         totalCount: prevCart.totalCount + 1
       };
 
-      console.log('Updated Cart:', newCart);
       return newCart;
     });
   };
