@@ -20,6 +20,10 @@ const CartPage = ({ cart, setCart }) => {
         });
     };
 
+    const showTotalPrice = (cart) => {
+        return cart.items.reduce((sum, item) => sum + item.price * item.count, 0);
+    }
+
     return (
         <div className="container">
             <Header cart={cart} />
@@ -48,7 +52,7 @@ const CartPage = ({ cart, setCart }) => {
                             ))}
                             <div className="cart-total-price">
                                 <span>合計金額：</span>
-                                <span>¥650</span>
+                                <span>¥{showTotalPrice(cart)}</span>
                             </div>
                             <button className="cart-button">購入を確定する</button>
                         </>
